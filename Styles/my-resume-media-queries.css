@@ -17,6 +17,9 @@
     top: 275px;
     left: 30px;
   }
+  .showcase-image-wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -94,9 +97,10 @@
     top: 55px;
     right: 20px;
   }
-  .applicant-logo img {
+  .applicant-logo {
     width: 40px;
     height: 50px;
+    margin: 0 0 50px 0;
   }
   .contact-case {
     width: 100%;

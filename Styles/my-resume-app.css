@@ -1,7 +1,7 @@
 :root {
   /* css variables/custom properties */
 
-  --primary-color: rgb(17, 16, 16);
+  --primary-color: rgb(40, 36, 36);
   --secondary-color: white;
   --mid-color: grey;
 }
@@ -12,7 +12,7 @@ html {
 
 * {
   /* all elements will take this style */
-  
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -20,7 +20,9 @@ html {
 }
 
 body {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  background-color: black;
+  color: var(--secondary-color);
 }
 
 a {
@@ -31,9 +33,9 @@ nav {
   padding: 10px 50px;
 }
 
-.applicant-logo img {
-  width: 50px;
-  height: 60px;
+.applicant-logo {
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 .applicant-intro {
@@ -152,7 +154,7 @@ nav {
   animation-duration: 2.5s;
   animation-timing-function: ease;
   height: 350px;
-  margin: 100px 0 30px auto;
+  margin: 70px 0 30px auto;
   position: relative;
   z-index: 1000;
 }
@@ -160,7 +162,7 @@ nav {
 .applicant-photo img {
   width: inherit;
   height: inherit;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   margin: 0;
   transform: translate(-20px, -20px);
 }
@@ -257,8 +259,26 @@ nav {
   margin: 0 auto 50px;
   text-align: center;
   line-height: 29px;
-  color: var(--mid-color);
+  color: white;
   font-size: 17px;
+}
+
+.conference-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.showcase-image-wrapper {
+  width: 45%;
+}
+
+.showcase-image-wrapper img {
+  width: 100%;
+  height: 300px;
+  margin: 30px 0;
 }
 
 .contact-case {
@@ -285,10 +305,11 @@ nav {
 }
 
 .socials-case {
-  width: 180px;
+  width: 200px;
   margin: 0 auto 70px;
   /* text-align: center; */
   display: flex;
+  /* color: white; */
   justify-content: space-between;
 }
 
@@ -308,7 +329,7 @@ nav {
 
 .socials-case a {
   font-size: 28px;
-  color: var(--primary-color);
+  color: white;
 }
 
 .socials-case a:hover {
@@ -376,7 +397,7 @@ button {
   font-size: 15px;
   padding: 15px;
   color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: grey;
 }
 
 button:hover {
